@@ -9,6 +9,8 @@ mi_diccionario = {"clave1": 20, "clave2": "Texto", "Clave3": (1, True), "clave 4
 
 print(mi_diccionario)
 
+# Accediendo a un elemento
+
 print(mi_diccionario["clave 4"])
 
 print(mi_diccionario[(1, 20)])
@@ -19,15 +21,15 @@ mi_diccionario["clave5"] = 41.56
 
 print(mi_diccionario)
 
-# elimando un elemento con "del"
+# eliminando un elemento con "del"
 
 del(mi_diccionario["clave1"])
 
-print(mi_diccionario) # {"clave2": "Texto", "Clave3": (1, True), "clave 4": [1, 51], (1, 20): 25.0}
+print(mi_diccionario) # {'clave2': 'Texto', 'Clave3': (1, True), 'clave 4': [1, 51], (1, 20): 25.0, 'clave5': 41.56}
 
-# Usando in paar ver si existe esa clave en un diccionario
+# Usando in para ver si existe esa clave en un diccionario
 
-print("clave 4" in mi_diccionario)
+print("clave 4" in mi_diccionario) # True
 
 print("clave 5" in mi_diccionario)
 

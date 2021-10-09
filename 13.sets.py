@@ -15,6 +15,8 @@ print(set1)
 
 set2 = set() # Conjunto vacío
 
+print(type(set1))
+
 # Crear un set a partir de una lista
 
 set3 = set([1, 20, True, 50, 20]) # crea {1, 50, 20} , al True lo ve como el número 1
@@ -51,11 +53,11 @@ set3.remove(50)
 
 print(set3)
 
-set3.remove((20, 5, True))
+# set3.remove((20, 5, True))
 
-# s = (20, 5, True)
+s = (20, 5, True)
 
-# set3.remove(s)
+set3.remove(s)
 
 print(set3) # {1, 'texto', 20}
 
@@ -73,22 +75,24 @@ set_1 = {5, 25, 75, 105}
 
 set_2 = {15, 45, 75, 105}
 
-print(set_1 & set_2) # {105, 75}
+print(set_1 & set_2) # retorna el set {105, 75}
 
-print(set_1.intersection(set_2))
+(set_1.intersection(set_2))
+
+print((set_1.intersection(set_2)))
 
 # Unión de sets
 
 print(set_1.union(set_2))
 
-# Uso de subset, pregunta si los elementos de un set estan todos dentro de otro set, es como preguntar si es un subconjunto.
+# Uso de issubset, pregunta si los elementos de un set estan todos dentro de otro set, es como preguntar si es un subconjunto.
 
 set_3 = {15, 75}
 
 print(set_3.issubset(set_2)) # True
 
-# https://hetpro-store.com/TUTORIALES/set-en-python-7-colecciones/
-# https://www.delftstack.com/es/tutorial/python-3-basic-tutorial/data-type-sets/
+# # https://hetpro-store.com/TUTORIALES/set-en-python-7-colecciones/
+# # https://www.delftstack.com/es/tutorial/python-3-basic-tutorial/data-type-sets/
 
-# https://j2logo.com/python/tutorial/tipo-set-python/
+# # https://j2logo.com/python/tutorial/tipo-set-python/
 
