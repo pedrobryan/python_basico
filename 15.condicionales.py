@@ -18,18 +18,20 @@ Recordemos que un booleano puede ser resultado de realizar operaciones de compar
 
 condicion = True
 
+isActive = True
+
 if(condicion == True):
     print("Se cumplió la condición")
 
 
-if(condicion):
-    print("Se cumplió la condición")
+if(isActive):
+    print("Se cumplió la condición de isActive")
 
 print("----------------------------")
 
 # if-else
 
-age = 18
+age = 17
 
 if(age >= 18):
     print("Eres mayor de edad")
@@ -41,7 +43,7 @@ print("----------------------------")
 
 # if anidado, usando "elif"
 
-numero = -5
+numero = 11
 
 if(numero < 0):
     print("El número %d es menor que cero" % numero )
@@ -52,9 +54,9 @@ else:
 
 print("----------------------------")
 
-# if anidado, usando más if dentro del if
+# # if anidado, usando más if dentro del if
 
-entero = 20
+entero = -1
 
 if(entero >= 0):
     if(entero < 10):
@@ -75,4 +77,6 @@ year = 2005
 if(year >= 2000 and year <=2010):
     print("La canción fue escrita entre el año 2000 y el año 2010")    
 else:
-    print("La canción antes del 2000 o después del 2010")
+    print("La canción fue escrita antes del 2000 o después del 2010")
+
+print("codigo fuera del if y del else")
