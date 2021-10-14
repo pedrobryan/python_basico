@@ -95,11 +95,11 @@ def mayorEdad(edad):
 edad = 20
 
 print(mayorEdad(20))
-print(mayorEdad(17))
+# print(mayorEdad(17))
 
 # Algunas funciones predefinidas de python
 
-# len
+# len, nos da la longitud de un texto, tupla, lista, etc
 # print
 # sum, suma los elementos de una lista o de una tupla.
 
@@ -137,13 +137,14 @@ saludando("Anika")
 
 # Variables globales, son las variables que van a poder ser accedidas desde fuera o dentro de las funciones, debe usarse la palabra clave "global"
 
-# global var_global
+# # global var_global
 
 var_externa = "Externa"
 
 def imprimir(variable):
     var_interna = "variable interna"
-    print(f"soy una {variable}")
+    print(f"soy una variable {variable}")
+    print(var_interna)
 
 
 imprimir(var_externa)
@@ -153,7 +154,7 @@ imprimir(var_externa)
 def imprimir2(variable):
     global var_interna_global
     var_interna_global = "variable interna global"
-    print(f"soy una {variable}")
+    print(f"soy una variable {variable}")
 
 
 imprimir2(var_externa) # Al ejecutar creamos la variable global var_interna_global
@@ -179,7 +180,7 @@ my_function()
 var2 = 25
 
 def funcion2():
-    var2 = 12
+    var2 = 12 # variable local
     if var2 == 12:
         print("Es correcto")
     else:
@@ -220,12 +221,13 @@ def mostrarArgumentos(*args):## args es un nombre convencional, pero puede ser c
 mostrarArgumentos(20, True, [20, 10])
 
 
-def mostrar_diccionario(**kwargs):
+def mostrar_diccionario(**kwargs): # por convención se pone kwargs
     print(type(kwargs))
+    print(kwargs)
     for key in kwargs:
         print(f"{key}: {kwargs[key]}")
 
-mostrar_diccionario(nombre="Max", raza="Rottweiller", edad=2)
+mostrar_diccionario(nombre="Max", raza="Rottweiller", edad=2) # {"nombre": "Max", "raza": "Rottweiller", "edad": 2}
 
 
 # Anotaciones en funciones, nos sirve de manera informátiva.
@@ -237,4 +239,4 @@ def duplicar(num: int) -> int:
 print(duplicar(20))
 print(duplicar("texto"))
 
-# https://ellibrodepython.com/funciones-en-python
+# # https://ellibrodepython.com/funciones-en-python
