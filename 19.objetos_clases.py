@@ -19,11 +19,14 @@ Encapsulamiento
 class Auto(): # Clase vacía y sin parámetros
     pass
 
+class Auto2:
+    pass
+
 # Instanciando la clase o creando un objeto
 
 mi_auto = Auto()
 
-# Definiendo atributos
+# # Definiendo atributos
 
 
 # atributos de instancia
@@ -33,7 +36,7 @@ class Perro:
     def __init__(self, nombre, raza):# método mágico __init__ sirve de constructor, es decir que se ejecutará al instanciar a la clase. el self hace referencia al objeto en sí.
         print(f"El perro se llama {nombre} y es de raza: {raza}")
 
-        #atributos de instancia
+        #atributos de instancia o del objeto
 
         self.nombre = nombre # self.nombre es un atributo de instancia, aunque aquí causa confusión ya que tieen el mismo nombre del parámetro, en realidad podriamos poner cualquer otro nombre.
         self.raza = raza
@@ -74,6 +77,9 @@ print(Perro2.especie)
 Perro2.especie = "Reptil"
 print(Perro2.especie)
 
+miperro_3 = Perro2("Bobby", "Salchicha")
+print(miperro_3.especie)
+
 # definiendo otros métodos
 
 class Perro3:
@@ -95,4 +101,4 @@ mi_perro3.ladrar()
 mi_perro3.caminar(3)
 
 
-# https://ellibrodepython.com/cohesion-en-programacion
+# # https://ellibrodepython.com/cohesion-en-programacion
